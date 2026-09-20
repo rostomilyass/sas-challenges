@@ -5,12 +5,10 @@ let tableau = [];
 for (let i=0;i<taille;i++){
     let valeur = parseInt(prompt(`donnez moi la valeur du nmbre n°${i+1} `));
     tableau.push(valeur)
+    
 }
-let cible = parseInt(prompt("Entrez l'element que vous desirer changer: "));
-let valeur = parseInt(prompt("Entrez la valeur que vous desirer implementer dans cette element: "));
+let somme = 0
 for (let i=0;i<taille;i++){
-    if (tableau[i]=== cible){
-        tableau[i]=valeur
-    }
+     somme += tableau[i]
 }
-console.log(tableau)
+console.log(somme)
